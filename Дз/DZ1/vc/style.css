@@ -1,0 +1,134 @@
+*{
+	margin: 0;
+	padding: 0;	
+}
+nav{
+	background-color: #feebef;
+	height: 3.5%;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+li{
+	padding: 10px;
+}
+
+a:hover{
+	color: #e25a76;
+}
+
+i:hover{
+	color: #e25a76;
+}
+
+#nav_nav{
+	width: 48%;
+	display: inline-block;
+
+/*	не применилось, хз как центрировать по высоте
+	vertical-align: middle;*/
+
+/*	из-за этого съезжает все три айди
+	padding-top: 10px;
+	padding-bottom: 10px; */
+
+/*	и из-за этого тоже, хотя я хочу только меню подвинуть, а не все
+	padding-left: 30px;*/
+}
+
+#search{
+	width: 20%;
+	display: inline-block;
+
+/*	vertical-align: middle; такая же проблема*/
+}
+
+#user{
+	width: 15%;
+	display: inline-block;
+/*	vertical-align: middle; такая же проблема*/
+}
+
+#user_after{
+	display: none;
+}
+
+.graficlogo{
+	/*Почему у картинки есть отступы и как отрегулировать ее положение внутри блока? */
+	padding: 0px; /* не применилось */
+	margin: 0px; /* не применилось */
+	height: 30px;
+}
+
+.topnav_link{
+	display: inline-block;
+    margin-right: 10px;
+}
+
+.topnav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.subnav{
+	display: none;
+	position: absolute;
+}
+
+nav ul li:hover > ul {
+/*выпадающий список отображается только при наведении,
+ т.к. я хз как сделать чтобы список выпадал при нажатии на иконку */
+    display:inherit;
+}
+
+.subnav_link{
+    text-decoration: none;
+    list-style: none;
+}
+
+.btn_write{
+	background: #fff;
+	color: #000;
+	border-radius: 5px;
+	border: 0;
+	padding: 5px 12px;
+}
+
+@media (max-width: 800px) {
+
+
+	/* при минимальном размере окна полоса все равно съезжает*/
+	nav{
+		height: 3.5%;
+	}
+
+	#nav_nav{
+		min-width: 10%;
+		display: inline-block;
+	}
+
+	#search{
+		min-width: 10%;
+		display: inline-block;
+	}
+
+	#popular_hide{
+		display: none;
+	}
+
+	#user{
+		display: none;
+	}
+
+	#user_after{
+		width: 20%;
+		display: inline-block;
+		text-align: right;
+		min-width: 10%;
+	}
+}

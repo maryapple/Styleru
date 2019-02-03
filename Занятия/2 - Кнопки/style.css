@@ -1,0 +1,10 @@
+body{
+	padding: 50px;
+}
+
+@media (max-width: 500px) {
+	button{
+		display: block !important;
+		width: 100%;
+	}
+}

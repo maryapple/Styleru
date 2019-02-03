@@ -1,0 +1,113 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	background-color: rgb(76, 117, 163);
+  height: 42px;
+}
+
+i{
+  color: #2a5885;
+  padding: 10px;
+}
+
+i:hover {
+  color: #B0B0B0;
+}
+
+.graficlogo{
+  height: 20px;
+  width: 30px;
+}
+
+#logo{
+	width: 19%;
+	display: inline-block;
+	text-align: right;
+  vertical-align: middle;
+  min-width: 5%;
+}
+
+#searching{
+	width: 26%;
+	display: inline-block;
+}
+
+#grafic_icons{
+	width: 30%;
+	display: inline-block;
+  vertical-align: middle;
+}
+
+#user{
+	width: 20%;
+	display: inline-block;
+  vertical-align: middle;
+}
+
+.search input {
+  border: none;
+  margin-left: 130px;
+
+}
+
+.search{
+  width: 60%;
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.search .input {
+  width: 100%;
+  padding: 5px 15px 5px 30px;
+  border-radius: 20px;
+  background: #224b7a;
+  outline: none;
+}
+
+.search .input:focus {
+  background: #fff;
+  color: #000;
+}
+
+.search .submit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: 100%;
+  cursor: pointer;
+  background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
+  opacity: 0.5;
+}
+
+
+/* ЗДЕСЬ БЕДА*/
+@media (max-width: 600px) {
+  #logo{
+  width: 5%;
+  display: inline-block;
+  text-align: right;
+  vertical-align: middle;
+}
+
+#searching{
+  width: 30%;
+  display: inline-block;
+}
+
+#grafic_icons{
+  width: 10%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#user{
+  width: 10%;
+  display: inline-block;
+  vertical-align: middle;
+}
+}

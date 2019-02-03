@@ -1,0 +1,39 @@
+button {
+    outline: none !important;
+}
+
+.our-navbar-nav {
+    list-style: none;
+    padding: 0;
+}
+
+.our-nav-link {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.our-navbar-toggler {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    
+    .our-navbar-toggler {
+        display: block;
+    }
+
+    .our-navbar-nav {
+        height: 0;
+        overflow: hidden;
+        transition: .3s;
+    }
+    
+    .our-navbar-nav.show {
+        height: 55px;
+    }
+    
+    .our-nav-link {
+        display: block;
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>задание</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<style>
+		body{
+			padding: 50px;
+		}
+		.tooltip-inner{
+			background-color: green;
+		}
+
+		.first .popover-header{
+			color: red;
+		}
+
+		.second .popover-body{
+			padding: 25px;
+		}
+
+		.modal{
+			background-color: rgba(255, 0, 0, 0.3);
+		}
+
+		.modal-sm{
+			width: 50px;
+		}
+	</style>
+</head>
+<body>
+
+	<button class="btn btn-danger"
+			data-toggle="tooltip-inner" 
+			title="Это тултип"
+			data-placement="top"
+	>
+	Кнопка</button>
+	
+	<button class="btn btn-success"
+			data-toggle="popover" 
+			title="Заголовок" 
+			data-content="Это поповер"
+			data-placement="bottom"
+	>
+	Поповер</button>
+
+	<button class="btn btn-info"
+			data-toggle="popover" 
+			title="Заголовок" 
+			data-content="Это поповер"
+			data-placement="bottom"
+	>
+	Поповер</button>
+
+	<button class="btn btn-primary" data-toggle="modal" data-target=".modal">
+		Модальное окно
+	</button>
+
+	<div class="modal" role="dialog" data-backdrop="false">
+		<div class="modal-dialog modal-sm modal-dialog-concentered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Заголовок</h5>
+					<button class="close" data-dismiss="modal">
+						&times;
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>text</p>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-outline-success" data-dismiss="modal">Готово</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+	<script>
+		$('.btn-danger').tooltip();
+		$('.btn-success').popover({
+			html: true,
+			title: 'Другой Заголовок',
+			delay: 1000,
+			template: '<div class="popover first" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>'
+		});
+
+		$('.btn-info').popover({
+			html: true,
+			title: 'Другой Заголовок',
+			delay: 1000,
+			template: '<div class="popover second" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>'
+		});
+
+		// $('.btn-primary').modal();
+	</script>
+</body>
+</html>
