@@ -1,0 +1,69 @@
+body{
+	padding: 50px;
+}
+
+button.mybutton {
+  color: #fff;
+  text-decoration: none;
+  background: #A81BFF;
+  padding: 6px 18px 8px;
+  border-radius: 8px;
+  border: none;
+  display: inline-block;
+  transition: all 0.2s;
+}
+
+button.mybutton:hover { 
+	background: #9004E8; 
+}
+
+/*button.mybutton:active { 
+	background: #6500A4;
+	box-shadow: 0 0 15px #C287E7;
+	outline: none;
+	border: 2px solid #DC5AF0;
+}*/
+
+button.mybutton:focus{
+	background: #6500A4;
+	box-shadow: 0 0 15px #C287E7;
+	outline: none;
+}
+
+button.my_outline_button{
+	color: #A81BFF;
+	text-decoration: none;
+	border: 1px solid #A81BFF;
+	border-radius: 8px;
+	padding: 6px 18px 8px;
+	background: transparent;
+}
+
+button.my_outline_button:hover{
+	background: #A81BFF;
+	color: #fff;
+
+}
+
+/*button.my_outline_button:active{
+	background: #6500A4;
+	box-shadow: 0 0 15px #C287E7;
+}*/
+
+button.my_outline_button:focus{
+	outline: none;
+	background: #6500A4;
+	box-shadow: 0 0 15px #C287E7;
+	color: #fff;
+}
+
+button.left{
+	border-radius: 8px 0 0 8px;
+}
+
+button.middle{
+	border-radius: 0;
+}
+button.right{
+	border-radius: 0 8px 8px 0;
+}
