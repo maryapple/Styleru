@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>задание</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
+	<title>Tooltips</title>
+	<link rel="stylesheet" 
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+	integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+	crossorigin="anonymous">
 	<style>
 		body{
 			padding: 50px;
@@ -26,7 +28,7 @@
 		}
 
 		.modal-sm{
-			width: 50px;
+			width: 200px;
 		}
 	</style>
 </head>
@@ -47,9 +49,9 @@
 	>
 	Поповер</button>
 
-	<button class="btn btn-info"
-			data-toggle="popover" 
-			title="Заголовок" 
+	<button class="btn btn-info" 
+			data-toggle="popover"
+			title="Заголовок"
 			data-content="Это поповер"
 			data-placement="bottom"
 	>
@@ -87,7 +89,7 @@
 		$('.btn-success').popover({
 			html: true,
 			title: 'Другой Заголовок',
-			delay: 1000,
+			delay: 500,
 			template: '<div class="popover first" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>'
 		});
 

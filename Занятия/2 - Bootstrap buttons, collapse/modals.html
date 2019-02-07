@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>modals</title>
+	<link rel="stylesheet" type="text/css" href="modalsstyle.css">
+</head>
+<body>
+	<div class="container">
+		<div class="tooltip">
+			<div class="tooltip-inner">
+				<p class="tooltip-msg">hello</p>
+			</div>
+		</div>
+		<button>button</button>
+	</div>
+
+	<script>
+		let btn = document.querySelector('button');
+		btn.addEventListener('click', function(){
+			let container = document.querySelector('.container');
+			container.classList.toggle('active');
+		})
+	</script>
+</body>
+</html>
