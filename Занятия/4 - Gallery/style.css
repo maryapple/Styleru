@@ -1,0 +1,17 @@
+.galleryImage{
+	width: 100%;
+}
+
+#fullImage{
+	width: 100%;
+}
+
+.modal-dialog{
+	width: 80%;
+	max-width: 1000px;
+}
+
+#slider{
+	width: 100%;
+	max-width: 1000px;
+}
