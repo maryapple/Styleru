@@ -1,0 +1,66 @@
+nav{
+	background-color: #feebef;
+	height: 50px;
+}
+
+.navbar-brand{
+	padding-left: 6% !important;
+	margin-right: 0 !important;
+	margin-right: 0px !important;
+	width: 12% !important;
+	padding-top: 0 !important;
+}
+
+.graficlogo{
+	/*width: 42% !important;*/
+	height: 30px !important;
+}
+
+a{
+	padding-top: 17px !important;
+}
+a:hover, i:hover{
+	color: #e25a76 !important;
+}
+
+.navbar{
+	padding: 0 !important;
+}
+
+.nav-link{
+	padding-right: 1rem !important;
+}
+
+.search{
+	padding-left: 180px !important;
+}
+
+.write{
+	padding-left: 25px !important;
+}
+
+.login{
+	padding-left: 100px !important;
+	padding-right: 50px !important;
+}
+
+#pr{
+	background-color: #fff;
+	width: 342px;
+}
+
+@media (min-width: 576px) {
+	#navbarTogglerDemo01, .btn_hide{
+		display: none !important;
+	}
+}
+
+@media (max-width: 575px) {
+	#navbarNavDropdown, .navbar-brand{
+		display: none !important;
+	}
+
+	a{
+		padding-top: 0 !important;
+	}
+}

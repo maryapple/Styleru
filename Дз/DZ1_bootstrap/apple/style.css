@@ -1,17 +1,93 @@
-nav{ 
+a{
+	margin-left: 10%;
+}
+a:hover{
+	color: #B0B0B0 !important;
+}
+i:hover{
+	color: #B0B0B0;
+}
+nav{
 	height: 44px;
-	justify-content: center !important;
+	background-color: rgba(45,45,45,0.98);
 }
-
-.nav-item{
-	padding: 0 30px !important;
+hr{
+	border: 1px solid #999 !important;
+	width: 80% !important;
 }
-
 
 .nav-link{
 	color: #fff !important;
-	line-height: 3.14286;
 	font-size: 14px;
 	font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue",
 	"Helvetica","Arial",sans-serif;
+	padding: 0 !important;
 }
+
+/*.navbar-nav{
+	margin-bottom: 70% !important;
+}*/
+
+.navbar-toggler{
+	border-color: #343a40 !important;
+	color: #fff !important;
+}
+
+.btn_hide{
+	background: rgba(45,45,45,0);
+	color: #fff;
+	border: none;
+}
+
+#navbarNav-collapsing{
+	background-color: #000 !important;
+	width: 100%;
+}
+
+.turnblack{
+	background-color: #000 !important;
+	/*transition-delay: 1s !important;*/
+}
+
+.form-control{
+	background-color: #343a40 !important;
+}
+
+.navbar{
+	padding: 0 !important;
+}
+
+
+@media (min-width: 768px){
+	nav{
+		height: 44px;
+		background-color: rgba(45,45,45,0.98);
+		padding: 0 !important;
+	}
+
+	#navbarNav-collapsing{
+		display: none !important;
+	}
+
+	#navbarNav{
+		justify-content: center !important;
+	}
+
+	.btn_hide{
+		display: none;
+	}
+
+	.nav-item{
+		/* при сворачивании расстояние сохраняется и это неправильно*/
+		padding: 0 30px !important; 
+
+		/*это вообще не работает:*/
+		/*max-width: 100px !important;*/
+		/*min-width: 55px;*/
+	}
+	
+	.turnblack{
+	background-color: rgba(45,45,45,0.98) !important;
+	}
+
+}	
