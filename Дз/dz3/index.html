@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tooltip, Modal</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<div class="container">
+		<div class="tooltip">
+			<div class="tooltip-inner">
+				<p class="tooltip-msg">Привет!</p>
+			</div>
+		</div>
+		<button id="too" title="Привет, это заголовок">Кнопка с тултипом</button>
+	</div>
+	
+	<!-- <div class="modal-overlay" id="modal-overlay"> -->
+		<div class="modal" id="modal" role="dialog">
+			<button class="close-button" id="close-button">
+				Закрыть
+			</button>
+
+			<div class="modal-content">
+				<h1>Заголовок</h1>
+				<p>Текст</p>
+			</div>
+		</div>
+	
+
+		<button class="open-button" id="open-button">
+			Открыть окно
+		</button>
+
+	<!-- </div> -->
+
+	<script>
+		let btn = document.querySelector('#too');
+
+		btn.addEventListener('mouseover', function(){
+			let container = document.querySelector('.container');
+			console.log(btn.getAttribute('title'));
+			container.classList.toggle('active');
+		})
+
+		btn.addEventListener('mouseout', function(){
+			let container = document.querySelector('.container');
+			console.log(btn.getAttribute('title'));
+			container.classList.toggle('passive');
+		})
+
+		let modal = document.querySelector('#modal');
+		// let modalOverlay = document.querySelector("#modal-overlay");
+		let closeButton = document.querySelector('#close-button');
+		let openButton = document.querySelector('#open-button');
+
+		closeButton.addEventListener("click", function(){
+			modal.classList.toggle("closed");
+			// modalOverlay.classList.toggle("closed");
+		});
+
+		openButton.addEventListener("click", function(){
+			modal.classList.toggle("closed");
+			// modalOverlay.classList.toggle("closed");
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+.container{
+	display: inline-flex;
+	flex-direction: column-reverse;
+}
+
+.container.active .tooltip{
+	display: inline-block;
+}
+
+.tooltip{
+	display: none;
+}
+
+.tooltip-msg{
+	margin: 5px 0;
+	text-align: center;
+}
+
+#too{
+	padding: 10px 20px;
+	color: #fff;
+	background: #000;
+	border: none;
+}
+
+
+
+.modal{
+	position: fixed;
+	width: 200px;
+	height: 200px;
+	top: 40%;
+	left: 40%;
+	background: #AD93CE;
+}
+
+.modal.closed{
+	display: none;
+}
+
+.modal-content{
+	padding-left: 15px;
+	padding-top: 15px;
+}
+
+.open-button{
+	position: absolute;
+	padding: 10px 20px;
+	color: #fff;
+	background: red;
+	border: none;
+}
+
+.close-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: none;
+	background: #000;
+	color: #fff;
+	padding: 5px 10px;
+}
+
+/*.modal-overlay{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+}*/
